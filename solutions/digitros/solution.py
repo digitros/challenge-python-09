@@ -17,7 +17,7 @@ class Solution:
                 last = idx
 
         for _ in arr:
-            if array_len is not 0:
+            if array_len != 0:
                 arr[array_len] = arr[array_len - zero_acum]
                 if arr[array_len] == 0 and zero_acum > 0 and array_len - zero_acum <= last:
                     arr[array_len - 1] = 0
